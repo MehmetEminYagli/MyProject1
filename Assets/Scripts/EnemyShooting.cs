@@ -44,7 +44,7 @@ public class EnemyShooting : MonoBehaviour
 
     void Fire()
     {
-        Debug.Log("Enemy is shooting!"); // Ateş etme işlemi burada gerçekleştirilebilir
+      // Debug.Log("Enemy is shooting!"); // Ateş etme işlemi burada gerçekleştirilebilir
 
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPosition.position, Quaternion.identity);
         Vector3 direction = (player.position - transform.position).normalized;
